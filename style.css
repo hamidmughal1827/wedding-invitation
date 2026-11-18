@@ -1,5 +1,5 @@
 *{box-sizing:border-box} :root{--paper:#e4c45e;--paper2:#f8f3e9;--ink:#28251f;--muted:#897b63;--gold:#b49a69;--green:#596047}
-html{scroll-behavior:smooth}body{margin:0;background:#8b0000;color:var(--ink);font-family:"DM Sans",sans-serif;font-weight:300}
+html{scroll-behavior:smooth}body{margin:0;background:#8b0000;color:var(--ink);font-family:"DM Sans",sans-serif;font-weight:400}
 .invitation{width:min(100%,480px);margin:0 auto;background:var(--paper);min-height:100vh;overflow:hidden;box-shadow:0 0 55px #54493622}
 .cover-screen{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;padding:30px 24px;background:#e4c45e url("background-invitation.jpeg") center/cover no-repeat;overflow:hidden}
 .cover-glow{display:none}
@@ -27,3 +27,41 @@ h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600}h1{font-
 .reveal{opacity:0;transform:translateY(28px);transition:opacity 1s ease,transform 1s ease}.reveal.in-view{opacity:1;transform:translateY(0)}
 @media(min-width:600px){.invitation{margin:25px auto;border-radius:3px}.cover-screen,.page{min-height:850px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+/* Keep the floral artwork visible while giving every page text a calm, readable surface. */
+:root{--ink:#35141d;--muted:#583d36;--gold:#805d35;--green:#4b3329}
+.page{
+  background-image:linear-gradient(rgba(255,251,243,.70),rgba(255,251,243,.70)),url("background-pages.jpeg");
+  color:var(--ink);
+}
+.cover-screen{
+  background-image:linear-gradient(rgba(58,18,28,.08),rgba(58,18,28,.08)),url("background-invitation.jpeg");
+}
+.hero-page{
+  background-image:linear-gradient(rgba(255,251,243,.62),rgba(255,251,243,.62)),url("background-invitation.jpeg");
+}
+.ornament,.small-caps,.scratch-caption,.count-label,.countdown span{color:#56372e}
+.script{color:#572735;font-weight:400}
+.subline,.venue-address,.save-page>p:not(.small-caps){color:#49352f}
+.scratch-help{color:#49352f}
+.tap-hint,.cover-small{color:#4b2d26;text-shadow:0 1px 5px rgba(255,251,243,.95)}
+.cover-kicker{color:#59432e}
+.cover-names{color:#35141d}
+.page h1,.page h2,.page h3,.family-list p,.blessing,.countdown strong{color:#35141d}
+.family-list p{font-size:clamp(17px,4.5vw,19px);font-weight:600}
+.small-caps,.ornament,.scratch-caption,.count-label{font-size:11px;line-height:1.5;letter-spacing:2px}
+.subline,.venue-address,.save-page>p:not(.small-caps){font-size:13px}
+.scratch-help{font-size:12px}
+.pill-btn,.outline-btn{font-size:11px}
+.countdown span{font-size:9px}
+.page:before{border-color:#9c7350}
+.page:after{border-color:rgba(156,115,80,.55)}
+.scratch-page h2,.venue-page h2,.save-page h2,.share-page h2,.family-page h2{font-weight:600}
+.countdown>b{font-weight:400}
+@media(max-width:360px){
+  .page{padding-left:26px;padding-right:26px}
+  .countdown{gap:6px}
+  .countdown div{min-width:42px}
+  .countdown strong{font-size:28px}
+  .small-caps,.ornament,.scratch-caption,.count-label{letter-spacing:1.5px}
+}

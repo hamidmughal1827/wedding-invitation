@@ -21,7 +21,7 @@ function observeSections(){
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 }
 
-const weddingDate = new Date('2026-12-06T14:00:00+05:00');
+const weddingDate = new Date('2026-12-13T19:30:00+05:00');
 function updateCountdown(){
   let diff = weddingDate - new Date();
   if(diff < 0) diff = 0;

@@ -39,6 +39,7 @@ h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600}h1{font-
 }
 .hero-page{
   background-image:linear-gradient(rgba(255,251,243,.62),rgba(255,251,243,.62)),url("background-invitation.jpeg");
+  background-position:center center,right bottom;
 }
 .ornament,.small-caps,.scratch-caption,.count-label,.countdown span{color:#56372e}
 .script{color:#572735;font-weight:400}

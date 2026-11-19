@@ -98,6 +98,10 @@ h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600}h1{font-
 .hero-page>*{
   width:min(72%,320px);
 }
+.hero-page h1{font-size:42px}
+.hero-page .bride{font-size:38px}
+.hero-page h1 span{font-size:34px}
+.hero-page .subline{font-size:11px}
 .hero-page>.ornament,.hero-page>.script:not(.with){
   align-self:center;
   position:relative;
@@ -120,11 +124,13 @@ h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600}h1{font-
 @media(max-width:380px){
   .hero-page{padding-left:26px}
   .hero-page>*{width:64%}
-  .hero-page h1{font-size:34px}
-  .hero-page h1 span{font-size:30px}
+  .hero-page h1{font-size:30px}
+  .hero-page .bride{font-size:28px}
+  .hero-page h1 span{font-size:26px}
 }
 @media(max-width:360px){
   .hero-page>*{width:75%}
-  .hero-page h1{font-size:32px}
-  .hero-page h1 span{font-size:28px}
+  .hero-page h1{font-size:28px}
+  .hero-page .bride{font-size:26px}
+  .hero-page h1 span{font-size:24px}
 }

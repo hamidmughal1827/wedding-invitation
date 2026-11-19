@@ -143,3 +143,57 @@ h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600}h1{font-
   .hero-page .bride{font-size:26px}
   .hero-page h1 span{font-size:24px}
 }
+
+/* Scratch reveal card alignment and fit */
+.scratch-wrap {
+  height: clamp(190px, 50vw, 210px);
+}
+.scratch-under {
+  gap: clamp(5px, 1.5vw, 8px);
+  padding: 18px 20px;
+  text-align: center;
+}
+.scratch-under .script {
+  font-size: clamp(24px, 7vw, 27px);
+  line-height: 1;
+}
+.scratch-under strong {
+  max-width: 100%;
+  font-size: clamp(16px, 5vw, 19px);
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.scratch-under .scratch-time {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(11px, 3.5vw, 14px);
+  line-height: 1.2;
+}
+.scratch-under .scratch-time span {
+  font-weight: 700;
+  white-space: nowrap;
+}
+.scratch-under .scratch-time b {
+  font-size: clamp(9px, 3vw, 12px);
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+@media (max-width: 360px) {
+  .scratch-under { padding-inline: 14px; }
+  .scratch-under strong { font-size: 16px; }
+  .scratch-under .scratch-time b { letter-spacing: .5px; }
+}
+
+/* Make all scratch card text bold */
+.scratch-under,
+.scratch-under .script,
+.scratch-under strong,
+.scratch-under .scratch-time,
+.scratch-under .scratch-time span,
+.scratch-under .scratch-time b {
+  font-weight: 700;
+}

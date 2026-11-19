@@ -51,8 +51,8 @@ function setupScratch(){
     ctx.fillStyle=grad; ctx.fillRect(0,0,r.width,r.height);
     for(let y=2;y<r.height;y+=5){ctx.strokeStyle='rgba(116,91,48,.12)';ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(r.width,y);ctx.stroke();}
     ctx.fillStyle='#6e6048';ctx.textAlign='center';
-    ctx.font='italic 24px Georgia';ctx.fillText('Something Special Awaits',r.width/2,r.height/2-4);
-    ctx.font='8px Arial';ctx.letterSpacing='3px';ctx.fillText('S C R A T C H  T O  R E V E A L',r.width/2,r.height/2+22);
+    ctx.font='bold italic 24px Georgia';ctx.fillText('Something Special Awaits',r.width/2,r.height/2-4);
+    ctx.font='bold 8px Arial';ctx.letterSpacing='3px';ctx.fillText('S C R A T C H  T O  R E V E A L',r.width/2,r.height/2+22);
   }
   drawFoil(); window.addEventListener('resize',drawFoil);
   let down=false;

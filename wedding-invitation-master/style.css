@@ -183,9 +183,10 @@ h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600}h1{font-
   white-space: nowrap;
 }
 @media (max-width: 360px) {
-  .scratch-under { padding-inline: 14px; }
-  .scratch-under strong { font-size: 16px; }
-  .scratch-under .scratch-time b { letter-spacing: .5px; }
+  .scratch-under { padding-inline: 10px; }
+  .scratch-under strong { font-size: 15px; }
+  .scratch-under .scratch-time { gap: 4px; }
+  .scratch-under .scratch-time b { font-size: 9px; letter-spacing: 0; }
 }
 
 /* Final scratch-card text centering and fit */

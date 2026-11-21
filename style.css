@@ -134,3 +134,70 @@ h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600}h1{font-
   .hero-page .bride{font-size:26px}
   .hero-page h1 span{font-size:24px}
 }
+
+/* Final scratch reveal card: centered and fitted */
+.scratch-wrap {
+  height: clamp(190px, 50vw, 210px);
+}
+.scratch-under {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(5px, 1.5vw, 8px);
+  padding: 12px;
+  text-align: center;
+}
+.scratch-under > * {
+  width: 100%;
+  text-align: center;
+}
+.scratch-under .script {
+  margin: 0;
+  line-height: 1;
+  font-size: clamp(24px, 7vw, 27px);
+}
+.scratch-under strong {
+  display: block;
+  max-width: 100%;
+  font-size: clamp(15px, 4.8vw, 18px);
+  line-height: 1.2;
+  letter-spacing: .4px;
+  white-space: nowrap;
+}
+.scratch-under .scratch-time {
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 6px;
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(10px, 3.2vw, 13px);
+  line-height: 1.2;
+}
+.scratch-under .scratch-time span,
+.scratch-under .scratch-time b {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+}
+.scratch-under .scratch-time b {
+  font-size: clamp(9px, 3vw, 12px);
+  letter-spacing: 1px;
+}
+.scratch-under,
+.scratch-under .script,
+.scratch-under strong,
+.scratch-under .scratch-time,
+.scratch-under .scratch-time span,
+.scratch-under .scratch-time b {
+  font-weight: 700;
+}
+@media (max-width: 360px) {
+  .scratch-under { padding-inline: 14px; }
+  .scratch-under strong { font-size: 15px; }
+  .scratch-under .scratch-time b { letter-spacing: .5px; }
+}
